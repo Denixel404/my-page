@@ -115,12 +115,6 @@ div#screenshots {
     padding: 25px;
     text-align: center;
     border: 3px solid black;
-
-}
-
-body {
-    font-size: 18px;
-    margin: 40px;
 }
 
 @media (max-width: 600px) {
@@ -129,16 +123,90 @@ body {
         margin: 0px;
     }
 
+    header {
+      background-size: cover;
+      height: 75px;
+    }
+
     h1 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     h3 {
-        font-size: 15px;
+        font-size: 18px;
+    }
+
+    h3#block-2 {
+        font-size: 18px;
     }
 
     img {
         max-width: 100%;
         height: auto;
     }
+
+    img#avatar {
+        height: 55px;
+        margin-top: 10px;
+        margin-left: 12.5%;
+        margin-right: 7%;
+    }
+
+    img#computer-img {
+        height: 175px;
+        margin-top: 150px;
+    }
+
+    img#processor-img {
+        height: 125px;
+    }
+
+    img#screen-1 {
+    height: 200px;
+    border: 3px solid black;
+    }
+
+    img#screen-2 {
+        height: 175px;
+        border: 3px solid black;
+    }
+
+    img#screen-3 {
+        height: 175px;
+        border: 3px solid black;
+    }
+
+    img#screen-4 {
+        height: 175px;
+        border: 3px solid black;
+    }
+
+    img#QR-code {
+        float: none;
+        height: 250px;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+
+
+    .description {
+        font-size: 16px;
+        padding-left: 12.5%;
+        max-width: 80%;
+    }
+
+    .block-1 {
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+    .block-2 {
+        font-size: 13px;
+        margin-right: 5%;
+    }
+
+    div#content-block-3 {
+    display: block;
+}
+
 }
