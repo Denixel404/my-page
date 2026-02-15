@@ -178,11 +178,11 @@ div#screenshots {
     img#computer-img {
         height: 150px;
         margin-top: 150px;
-        margin-right: 15%;
+        margin-right: 5%;
     }
 
     img#processor-img {
-        height: 115px;
+        height: 125px;
     }
 
     img#screen-1 {
@@ -232,7 +232,7 @@ div#screenshots {
 
     .block-2 {
         font-size: 13px;
-        margin-right: 11%;
+        margin-right: 5%;
     }
 
     div#content-block-3 {
@@ -246,3 +246,4 @@ div#screenshots {
     }
 
 }
+
