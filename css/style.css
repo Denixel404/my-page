@@ -1,249 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 15%;
+  background-color: rgb(30, 30, 30);
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 header {
-    background-image: url('../images/banner.jpg');
-    width: 100%;
-    height: 200px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  background-color: #1b1a1a;
+  border-bottom: solid white 1px;
+  height: 50px;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+footer {
+  background-color: #131313;
+  margin-top: 30vh;
+  padding: 30px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+footer p {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  font-size: 12px;
+  color: deepskyblue;
+  text-align: center;
 }
 
 h1 {
-    padding-top: 1.8%;
-    padding-left: 25%;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 75px;
+  background-image: linear-gradient(45deg, #5e11c9, #d10493); /* твой градиент из шапки */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Ubuntu;
+  font-size: 3rem;
+  color: white;
+  margin: 30px;
+  text-align: center;
+}
+
+h2 {
+  background-image: linear-gradient(45deg, #5e11c9, #d10493); /* твой градиент из шапки */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-family: Ubuntu;
+  color: white;
 }
 
 h3 {
-    font-size: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 50px;
-}
-
-h3#block-2 {
-    font-size: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding-right: 10px;
-}
-
-h3#block-3 {
-    font-size: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding-right: 10px;
+  /* background-image: linear-gradient(45deg, #5e11c9, #d10493); /* твой градиент из шапки */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  font-size: 1.85rem;
+  font-family: Ubuntu;
+  color: rgb(102, 16, 214);
 }
 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    max-width: 50%;
-    margin-left: 5%;
+  font-size: 1.25rem;
+  font-family: Ubuntu;
+  color: white;
+  margin-bottom: 5px;
 }
 
-.block-1{
-    text-align: left;
-    font-size: 20px;
-    max-width: 45%;
-    padding-left: 10px;
+a {
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.block-2 {
-    text-align: right;
-    font-size: 20px;
-    max-width: 70%;
-    padding-right: 3%;
+a:hover {
+  color: #5e08aa;
+  cursor: pointer;
 }
 
-img#avatar {
-    float: left;
-    border-radius: 100%;
-    margin-top: 100px;
-    margin-left: 0.5%;
+img {
+  height: 128px;
 }
 
-img#computer-img {
-    float: right;
-    margin-top: 250px;
+button {
+  background-image: linear-gradient(45deg, #5e11c9, #d10493);
+  font-family: Ubuntu;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  width: 40%;
+  height: 40px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-img#screen-1 {
-    height: 500px;
-    border: 5px solid black;
+button:hover {
+  transform: translateY(2px);
+  cursor: pointer;
 }
 
-img#screen-2 {
-    height: 475px;
-    border: 5px solid black;
+.menu-link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Ubuntu;
+  color: white;
 }
 
-img#screen-3 {
-    height: 300px;
-    border: 5px solid black;
+.main-block {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 10%;
+  background-color: #1b1a1a;
+  border-radius: 25px;
+  padding: 3%;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-img#screen-4 {
-    height: 300px;
-    border: 5px solid black;
+.main-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;                          
+  border-radius: 25px;                 
+  border: 5px solid transparent;       
+  background:
+    linear-gradient(#1b1a1a, #1b1a1a) padding-box,   
+    linear-gradient(45deg, #080756, #d10493) border-box; 
+  z-index: -1;                        
 }
 
-img#QR-code {
-    height: 400px;
+.main-block h2 {
+  background-image: linear-gradient(45deg, #5e11c9, #d10493); /* твой градиент из шапки */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 
-img#cat-img, img#orange-img {
-    float: right;
-    height: 200px;
-    margin-right: 5%;
-    border: 2px solid black;
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  align-items: center;
 }
 
-.description {
-    max-width: 75%;
-    font-size: 20px;
-    padding-left: 25%;
+.block {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  background-color: #1a1a1a;
+  margin: 30px;
+  padding: 3%;
+  border-radius: 30px;
+  align-items: center;
 }
 
-div#content-block-2 {
-    display: flex;
-    align-items: center;
-    gap: 5%;
+.object-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10%;
+  background-color: #1b1a1a;
+  border-radius: 25px;
+  padding: 3%;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-div#content-block-3 {
-    display: flex;
-   align-items: center;
-   justify-content: flex-start;
-   gap: 25%;
+.object-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;                          
+  border-radius: 25px;                 
+  border: 5px solid transparent;       
+  background:
+    linear-gradient(#1b1a1a, #1b1a1a) padding-box,   
+    linear-gradient(45deg, #080756, #d10493) border-box; 
+  z-index: -1;                        
 }
 
-div#screenshots {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("../images/bg-projects.jpeg");
-    filter: brightness(90%);
-    gap: 10px;
-    padding: 0px;
-    text-align: center;
-    border: 3px solid black;
+.object-block img {
+  height: 384px;
 }
+
+.object-block a {
+  color: deepskyblue;
+}
+
+.object-block a:hover {
+  color: #a104d1;
+  transition: color 0.5s ease;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  align-items: center;
+}
+
+.simple-block {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  text-align: left;
+  align-items: center;
+}
+
+.links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.links-list li {
+  position: relative;           
+  padding-left: 64px;           
+  margin-bottom: 8px;           
+  line-height: 1.5;             
+}
+
+.links-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Картинка для GitHub */
+.git-link::before {
+  background-image: url("../images/github.png");
+}
+
+/* Сюда потом добавишь картинку для Telegram */
+.tg-link::before {
+  background-image: url("../images/tg.png");
+}
+
+.default-link::before {
+  background-image: url("../images/link1.png");
+}
+
+.hyperlink {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+#avatar {
+  border-radius: 10%;
+}
+
+#feather {
+  height: 128px;
+}
+
+#cat {
+  height: 256px;
+  border-radius: 25px;
+}
+
 
 @media (max-width: 600px) {
-    body {
-        font-size: 16px;
-        margin: 0px;
-    }
+  img {
+    height: 64px;
+  }
 
-    header {
-      background-size: cover;
-      height: 75px;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    h1 {
-        font-size: 25px;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
 
-    h3 {
-        font-size: 18px;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    h3#block-2 {
-        font-size: 18px;
-    }
+  button {
+    font-size: 1rem;
+    width: 70%;
+    height: 30px;
+  }
 
-    p {
-        font-size: 13px;
-        max-width: 75%;
-    }
+  header {
+    gap: 5%;
+    padding: 10px;
+  }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+  ul {
+    line-height: 2rem;
+  }
 
-    img#avatar {
-        height: 55px;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 7%;
-    }
+  .block {
+    flex-direction: column;
+  }
+  .main-block {
+    flex-direction: column;
+  }
 
-    img#computer-img {
-        height: 150px;
-        margin-top: 150px;
-        margin-right: 5%;
-    }
+  .object-block img {
+    height: 128px;
+  }
 
-    img#processor-img {
-        height: 125px;
-    }
+  .menu-link {
+    font-size: 1rem;
+  }
 
-    img#screen-1 {
-    height: 200px;
-    border: 3px solid black;
-    }
+  #avatar {
+    display: none;
+  }
 
-    img#screen-2 {
-        height: 150px;
-        border: 3px solid black;
-    }
+  #cat {
+    display: none;
+  }
 
-    img#screen-3 {
-        height: 150px;
-        border: 3px solid black;
-    }
+  #feather {
+    height: 64px;
+  }
 
-    img#screen-4 {
-        height: 150px;
-        border: 3px solid black;
-    }
-
-    img#QR-code {
-        float: none;
-        height: 250px;
-        margin-left: 25%;
-        margin-bottom: 10%;
-    }
-
-    img#cat-img, img#orange-img {
-        float: none;
-        height: 100px;
-        margin-left: 5%;
-    }
-
-
-    .description {
-        font-size: 16px;
-        padding-left: 10px;
-        max-width: 80%;
-    }
-
-    .block-1 {
-        font-size: 13px;
-        max-width: 75%;
-    }
-
-    .block-2 {
-        font-size: 13px;
-        margin-right: 5%;
-    }
-
-    div#content-block-3 {
-    display: block;
-    max-width: 90%;
-}
-
-    div#screenshots {
-        padding: 10px;
-        max-width: 100%;
-    }
-
+  #link-img {
+    margin-bottom: 25px;
+  }
 }
 
